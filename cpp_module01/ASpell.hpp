@@ -11,8 +11,8 @@ class ASpell {
 		ASpell(string name, string effects);
 		virtual ~ASpell();
 		ASpell();
-		ASpell(ASpell& copy);
-		ASpell& operator=(ASpell& src);
+		ASpell(const ASpell& copy);
+		ASpell& operator=(const ASpell& src);
 
 
 		const string& getName() const;

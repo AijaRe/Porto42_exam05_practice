@@ -11,8 +11,8 @@ class ATarget {
 		ATarget(string type);
 		virtual ~ATarget();
 		ATarget();
-		ATarget(ATarget& copy);
-		ATarget& operator=(ATarget& src);
+		ATarget(const ATarget& copy);
+		ATarget& operator=(const ATarget& src);
 
 
 		const string& getType() const;

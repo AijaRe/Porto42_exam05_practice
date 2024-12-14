@@ -11,18 +11,15 @@ class ASpell {
 		ASpell(string name, string effects);
 		virtual ~ASpell();
 		ASpell();
-		ASpell(ASpell& copy);
-		ASpell& operator=(ASpell& src);
-
+		ASpell(const ASpell& copy);
+		ASpell& operator=(const ASpell& src);
 
 		const string& getName() const;
 		const string& getEffects() const;
 		virtual ASpell*	clone() const = 0;
 		void	launch(const ATarget& target) const;
 
-
 	private:
-	
 		string _name;
 		string _effects;
 };

@@ -6,9 +6,9 @@ ATarget::~ATarget() {};
 
 ATarget::ATarget() : _type("notype") {};
 
-ATarget::ATarget(ATarget& copy) : _type(copy._type) {};
+ATarget::ATarget(const ATarget& copy) : _type(copy._type) {};
 
-ATarget& ATarget::operator=(ATarget& src) {
+ATarget& ATarget::operator=(const ATarget& src) {
 	if (this != &src){
 		_type = src._type;
 	}

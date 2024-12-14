@@ -11,16 +11,13 @@ class ATarget {
 		ATarget(string type);
 		virtual ~ATarget();
 		ATarget();
-		ATarget(ATarget& copy);
-		ATarget& operator=(ATarget& src);
-
+		ATarget(const ATarget& copy);
+		ATarget& operator=(const ATarget& src);
 
 		const string& getType() const;
 		virtual ATarget*	clone() const = 0;
 		void	getHitBySpell(const ASpell& spell) const;
 
-
 	private:
-	
 		string _type;
 };

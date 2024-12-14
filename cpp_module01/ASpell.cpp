@@ -6,9 +6,9 @@ ASpell::~ASpell() {};
 
 ASpell::ASpell() : _name("noname"), _effects("noeffects") {};
 
-ASpell::ASpell(ASpell& copy) : _name(copy._name), _effects(copy._effects) {};
+ASpell::ASpell(const ASpell& copy) : _name(copy._name), _effects(copy._effects) {};
 
-ASpell& ASpell::operator=(ASpell& src) {
+ASpell& ASpell::operator=(const ASpell& src) {
 	if (this != &src){
 		_name = src._name;
 		_effects = src._effects;

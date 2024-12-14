@@ -30,4 +30,8 @@ int main()
   richard.introduce();
   richard.launchSpell("Polymorph", *wall);
   richard.launchSpell("Fireball", *wall);
+  richard.launchSpell("Random stuff", *wall);
+
+  delete polymorph;
+  delete fireball;
 }
